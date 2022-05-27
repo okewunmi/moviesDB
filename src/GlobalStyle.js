@@ -3,8 +3,8 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStlye = createGlobalStyle `
 
 :root{
-    --maxwidth: 1280px;
-    --white: #ffff;
+    --maxWidth: 1280px; 
+    --white: #fff;
     --lightGrey: #eee;
     --MedGrey:#353535;
     --darkGrey: #1c1c1c;
@@ -14,12 +14,26 @@ export const GlobalStlye = createGlobalStyle `
     --fontSmall: 1rem   
 }
 *{
-    box-sizing: boarder-box;
-    pading: 0;
-    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;  
+}
+body{
+    padding: 0;
+    margin: 0;  
     
+    h1{
+       font-size:2rem;
+       font-weigth:600;
+       color:var(--white);  
+    }
+    h3{
+        font-size:1.1rem;
+        font-weigth:600;
+    }
+    p{
+        font-size:1rem;
+        color: var(--white); 
+    }
 }
 
-
-
-`
+`;
