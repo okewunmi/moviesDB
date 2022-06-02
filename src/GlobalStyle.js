@@ -10,7 +10,7 @@ export const GlobalStlye = createGlobalStyle `
     --darkGrey: #1c1c1c;
     --fontSuperBig: 2.5rem;
     --fontBig: 1.5rem;
-    --fontMedium: 1.2rem;
+    --fontMed: 1.2rem;
     --fontSmall: 1rem   
 }
 *{
@@ -28,7 +28,7 @@ body{
     }
     h3{
         font-size:1.1rem;
-        font-weigth:600;
+        font-weigth:600;    
     }
     p{
         font-size:1rem;
