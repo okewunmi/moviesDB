@@ -30,12 +30,17 @@ const Home = () => {
     :null
     }
     <Grid header='Popular Movies' >
-        {state.results.map(movies => (
-            <Thumb movieId={movies.id} clickable={true} image={movies.poster_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}${movies.poster_path}` : NoImage} />
-            >
-
-        
-            </Thumb>
+        {state.results.map(movie => (
+            <Thumb 
+            key={movie.id} 
+            clickable 
+            image=
+            {movie.poster_path 
+                ? IMAGE_BASE_URL + POSTER_SIZE + movie.poster_path : NoImage} 
+            
+            movieId={movie.id}
+            />
+           
 
         ))};
 

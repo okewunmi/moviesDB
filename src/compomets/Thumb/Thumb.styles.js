@@ -1,5 +1,25 @@
 import styled from "styled-components";
 
 export const Image = styled.img`
+width: 100%;
+max-width: 700px;
+transition: all 0.3s;
+border-radius: 20px;
+object-fit: cover;
+animation: animateThumb .5s;
+
+:hover{
+    opacity: 0.8;
+}
+
+@keyframes animateThumb {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
 
 `;
