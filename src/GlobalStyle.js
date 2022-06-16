@@ -23,12 +23,12 @@ body{
     
     h1{
        font-size:2rem;
-       font-weigth:600;
+       font-weight:600;
        color:var(--white);  
     }
     h3{
         font-size:1.1rem;
-        font-weigth:600;    
+        font-weight:600;    
     }
     p{
         font-size:1rem;
