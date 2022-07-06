@@ -19,9 +19,15 @@ import SearchBar from './SearchBar';
 import Button from './Button';
 
 const Home = () => {
-    const {state, loading, error, searchTerm, setSearchTerm} = useHomeFetch();
+    const {state, 
+        loading, 
+        error, 
+        searchTerm, 
+        setSearchTerm,  
+        setIsLoadingMore
+    } = useHomeFetch();
     
-   
+   if (error) return <div> something went wrong .... </div>;
     console.log(state);
     return (
     <>
@@ -51,7 +57,9 @@ const Home = () => {
 
     </Grid>
    {loading && <Spinner/>}
-    {state.page < state.total_pages && !loading && ( <Button text="Load More" />) }
+    {state.page < state.total_pages && !loading && ( 
+    <Button text="Load More" callback={()=> setIsLoadingMore(true)}/>
+    ) }
     </>
     );
 };
